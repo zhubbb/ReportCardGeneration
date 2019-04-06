@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_reportcardgeneration" default="compile.module.reportcardgeneration">
+  <dirname property="module.reportcardgeneration.basedir" file="${ant.file.module_reportcardgeneration}"/>
+  
+  <property name="module.jdk.home.reportcardgeneration" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.reportcardgeneration" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.reportcardgeneration" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.reportcardgeneration" value="-encoding UTF-8 -source 9 -target 9 ${compiler.args}"/>
+  
+  <property name="reportcardgeneration.output.dir" value="${module.reportcardgeneration.basedir}/out/production/ReportCardGeneration"/>
+  <property name="reportcardgeneration.testoutput.dir" value="${module.reportcardgeneration.basedir}/out/test/ReportCardGeneration"/>
+  
+  <path id="reportcardgeneration.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="reportcardgeneration.module.production.classpath">
+    <path refid="${module.jdk.classpath.reportcardgeneration}"/>
+  </path>
+  
+  <path id="reportcardgeneration.runtime.production.module.classpath">
+    <pathelement location="${reportcardgeneration.output.dir}"/>
+  </path>
+  
+  <path id="reportcardgeneration.module.classpath">
+    <path refid="${module.jdk.classpath.reportcardgeneration}"/>
+    <pathelement location="${reportcardgeneration.output.dir}"/>
+  </path>
+  
+  <path id="reportcardgeneration.runtime.module.classpath">
+    <pathelement location="${reportcardgeneration.testoutput.dir}"/>
+    <pathelement location="${reportcardgeneration.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.reportcardgeneration">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.reportcardgeneration">
+    <patternset refid="excluded.from.module.reportcardgeneration"/>
+  </patternset>
+  
+  <path id="reportcardgeneration.module.sourcepath">
+    <dirset dir="${module.reportcardgeneration.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.reportcardgeneration" depends="compile.module.reportcardgeneration.production,compile.module.reportcardgeneration.tests" description="Compile module ReportCardGeneration"/>
+  
+  <target name="compile.module.reportcardgeneration.production" description="Compile module ReportCardGeneration; production classes">
+    <mkdir dir="${reportcardgeneration.output.dir}"/>
+    <javac destdir="${reportcardgeneration.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.reportcardgeneration}/javac">
+      <compilerarg line="${compiler.args.reportcardgeneration}"/>
+      <bootclasspath refid="reportcardgeneration.module.bootclasspath"/>
+      <classpath refid="reportcardgeneration.module.production.classpath"/>
+      <src refid="reportcardgeneration.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.reportcardgeneration"/>
+    </javac>
+    
+    <copy todir="${reportcardgeneration.output.dir}">
+      <fileset dir="${module.reportcardgeneration.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.reportcardgeneration.tests" depends="compile.module.reportcardgeneration.production" description="compile module ReportCardGeneration; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.reportcardgeneration" description="cleanup module">
+    <delete dir="${reportcardgeneration.output.dir}"/>
+    <delete dir="${reportcardgeneration.testoutput.dir}"/>
+  </target>
+</project>

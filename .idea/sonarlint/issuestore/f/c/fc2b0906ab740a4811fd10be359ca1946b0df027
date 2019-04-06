@@ -1,0 +1,5 @@
+
+Gsquid:S1125,")Remove the literal "false" boolean value.( ¹û‘8˜úå€Ÿ-
+jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(žÉæ“ûÿÿÿÿ
+Fsquid:S1125-"(Remove the literal "true" boolean value.(ë“©Ì8£éæ€Ÿ-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ò¿ºõþÿÿÿÿ

@@ -1,0 +1,5 @@
+Test,Input/tests.csv
+Course,Input/courses.csv
+Student,Input/students.csv
+Mark,Input/marks.csv
+OUTPUT,Output/report.txt
