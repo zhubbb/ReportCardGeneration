@@ -4,7 +4,7 @@ fill the table with input file path and output file path
 e.g Course is the input file path for course data(courses.csv)
 
 
-The project is build but if you want to rebuild:
+The project is built but if you want to rebuild:
 the ant build file is auto generated , might need to modify it
 -build the project with ant or whatever, the main file is src\Controller\ReportGenerator.java
 -open and edit build.properties 
