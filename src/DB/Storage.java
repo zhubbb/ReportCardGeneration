@@ -34,7 +34,7 @@ public class Storage {
     }
     public Student addStudent(int id, String name){
         Student student= new Student(id,name);
-        students.put(id,new Student(id,name));
+        students.put(id,student);
         return student;
     }
 
@@ -53,7 +53,7 @@ public class Storage {
     }
 
 
-    public void addMark(int test_id, int student_id, double mark) throws Exception {
+    public Mark addMark(int test_id, int student_id, double mark) throws Exception {
         Student student=getStudent(student_id);
         if(student==null){
             throw new Exception("student id is not found");
@@ -69,6 +69,7 @@ public class Storage {
         Mark mark_info = new Mark(test_id,student_id,mark);
         student.addMark( course,test.getWeight(),mark_info);
 
+        return mark_info;
     }
 
     public List<Integer> getSortedStudentIds(){
