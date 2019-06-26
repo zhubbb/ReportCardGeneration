@@ -1,16 +1,0 @@
-
-Rsquid:S1444"4Make this "public static configDataPath" field final(¾µê8¢ÌÚ÷-
-"squid:ClassVariableVisibilityCheck"ZMake configDataPath a static final constant or non-public and provide accessors if needed.(¾µê8¢ÌÚ÷-
-‘"squid:ClassVariableVisibilityCheck"\Make configParameters a static final constant or non-public and provide accessors if needed.(‘§ü8„ƒŒû-
-Isquid:S2386"+Make member "configParameters" "protected".(ˆ¬ªæ8„ƒŒû-
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(àö¨è
-Xsquid:S1118":Add a private constructor to hide the implicit public one.(—Ä‘é8Ôª’ø-
-Lsquid:S1444".Make this "public static splitter" field final(î¡ÒÜ8Ê÷‡û-
-Tsquid:S1444"6Make this "public static configParameters" field final(‘§ü8„ƒŒû-
-Lsquid:S1444".Make this "public static database" field final(Ä¶º£8Øšúõ-
-‰"squid:ClassVariableVisibilityCheck"TMake database a static final constant or non-public and provide accessors if needed.(Ä¶º£8Øšúõ-
-‰"squid:ClassVariableVisibilityCheck"TMake splitter a static final constant or non-public and provide accessors if needed.(î¡ÒÜ8Ê÷‡û-
-=squid:S1640"Convert this Map to an EnumMap.(ˆ¬ªæ8Ôª’ø-
-Fsquid:S2786")Remove this redundant "static" qualifier.(£Õâu8‰şƒø-
-nsquid:CommentedOutCodeLine	"<This block of commented-out lines of code should be removed.(§°œ®ÿÿÿÿÿ8‡Ğ’ø-
-wsquid:S2293 "YReplace the type specification in this constructor call with the diamond operator ("<>").(ıÜ¼™8Øøû-

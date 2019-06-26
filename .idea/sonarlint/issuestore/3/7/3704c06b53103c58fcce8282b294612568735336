@@ -1,14 +1,0 @@
-
-dsquid:S00112C"FDefine and throw a dedicated exception instead of using a generic one.(‰Æáe8Èê«ı-
-dsquid:S00112/"FDefine and throw a dedicated exception instead of using a generic one.(‰Æáe8³³¤ı-
-usquid:S001178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ÿ­³ıÿÿÿÿ8’Òô-
-dsquid:S00112?"FDefine and throw a dedicated exception instead of using a generic one.(‰Æáe8‘ëõ-
-jsquid:S001128"FDefine and throw a dedicated exception instead of using a generic one.(—ÿ­³ıÿÿÿÿ8÷Òìô-
-psquid:S00117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Öğõã8°˜ö-
-psquid:S00117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ï‘º›8½å¦õ-
-esquid:S00112,"FDefine and throw a dedicated exception instead of using a generic one.(Öğõã8¾×¤ı-
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(•ĞÁØ8§³œü-
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒêÏï
-dsquid:S00112;"FDefine and throw a dedicated exception instead of using a generic one.(¸Ù¼	8¯ïçô-
-hsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¡¬İ8àÇœü-
-usquid:S001178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ÿ­³ıÿÿÿÿ8’Òô-
